@@ -1,0 +1,629 @@
+:root {
+    --green-color:rgb(17, 77, 17);
+    --green-two:#00a653;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    height: auto;
+}
+
+
+
+/* Start Header */
+.container-fluid {
+    position: relative;
+    height: 300px;
+}
+.logo {
+    width: 260px;
+    height: 210px;
+    margin-right: 55px;
+}
+.info-tel {
+    background-color: var(--green-color);
+    height: 50px;
+    border-radius: 0px 0px 70px 0px;
+    padding-right: 45px;
+    position: relative;
+}
+
+.tel {
+    position: absolute;
+    color: rgb(201, 214, 25);
+    height: 25px;
+    margin-top: 10px;   
+} 
+
+.info-tel h4 {
+    position: absolute;
+    color: rgb(201, 214, 25) ;
+    margin-right: 36px;
+}
+.info-tel h2 {
+    position: absolute;
+    margin-top: -8px;
+    margin-right: 138px;
+    font-weight: bolder;
+    font-size: 37px;
+    color: white;
+}
+
+.info-social {
+    background-color: var(--green-two);
+    height: 50px;
+}
+.info-social ul li{
+    margin-top: -60px;
+    
+}
+.info-social ul li .facebook , .twitter , .linkedin, .youtube{
+    height: 27px;
+}
+.info-social ul li .youtube:hover
+{
+    background-color: rgb(197, 23, 23);
+}
+.info-social ul li .facebook:hover
+{
+    background-color: rgb(28, 19, 97);
+}
+.info-social ul li .linkedin:hover
+{
+    background-color: rgb(116, 22, 122);
+}
+.info-social ul li .twitter:hover
+{
+    background-color: rgb(58, 122, 205);
+}
+
+.kafil {
+     left: 15px;
+     bottom: 5px;
+     height: 230px;
+}
+/* End Header */
+
+/* Start Navbar */
+.navbar {
+    background-color: var(--green-two);
+    
+}
+@media (min-width: 991px)  {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    } 
+}
+
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Amiri', serif;
+    margin-right: 65px;
+}
+@media (max-width: 1200px) {
+    .navbar .navbar-nav .nav-link  {
+        font-size: 18px;
+        margin-right: 20px;
+       
+    }
+}
+@media (max-width: 800px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 40px;
+       
+    }
+}
+
+
+
+.navbar .navbar-nav .dropdown-menu {
+    background-color: var(--green-two);
+    margin-left: -25px;
+    margin-top: 7px;
+    
+}
+.navbar .navbar-nav .photo {
+    background-color: var(--green-two);
+    margin-left: 25px;
+    margin-top: 7px;
+    
+}
+
+@media (max-width: 991px) {
+    .navbar .navbar-nav .dropdown-menu{
+       width: 120%;
+       margin-right: 30px;
+       margin-top: 10px;
+       background-color: black;
+      
+    }
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: white;
+}
+@media (max-width: 991px) {
+    .navbar .navbar-nav .dropdown-menu .dropdown-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+       
+    }
+   
+}
+@media (max-width: 991px) {
+   
+    .navbar .navbar-nav .dropdown-menu li:hover {
+        color: aqua;
+        cursor: pointer;
+    }
+}
+
+.navbar .navbar-nav .dropdown-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+.navbar .navbar-nav .dropdown-menu li a:hover{
+    background-color:black;
+    margin-right: 0px;
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: aqua;
+    
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color:white ;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+   border-color: var(--green-color);
+}
+
+/* End Navbar */
+/*Start moves photo section 1 الصفحة الرئيسية */
+.content {
+    top: 0;
+}
+.content.active {
+    display: block;
+}
+.content .heigh {
+    height: 550px;
+}
+@media (max-width: 991px) {
+    .carousel-control-prev,
+    .carousel-control-next{
+       display: none;
+    }
+}
+
+.carousel-control-prev {
+    
+    background-color: rgba(66, 61, 61, 0.181);
+    width: 100px;
+   
+}
+.carousel-control-next {
+    background-color: rgba(66, 61, 61, 0.181);
+    width: 100px;
+    
+    
+}
+
+/*End moves photo section 1 الصفحة الرئيسية */
+/* Start section 02 الصفحة الرىيسية */
+.com-2 {
+    
+    background: #eff7fa;
+    height: auto;
+   
+}
+
+.com-2 .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.com-2 .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(46, 178, 173, 0.76);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateY(calc(-100% - 5px));
+}
+.com-2 .box:hover::before{
+    transform: translateY(0);
+    
+}
+.com-2 h4 {
+
+    background: cadetblue;
+}
+
+
+
+@media (min-width: 1200px) {
+    .com-2 h4 {
+        margin-top: 110px;
+    }
+}
+
+/* End section 02 الصفحة الرىيسية */
+
+/* Start section 03 الصفحة الرىيسية */
+.com-3 .proba {
+    background-color: #f3f6f9;
+}
+.com-3 .proba h4 {
+    color: white;
+}
+@media (max-width: 991px) {
+    .com-3 .proba  {
+       height: auto;
+    }
+}
+.com-3 .proba .stat {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    margin-right: 70px;
+    background-color: rgb(35, 171, 96);
+    border-radius: 50%;
+    
+    
+}
+@media (max-width: 991px) {
+    .com-3 .proba .stat  {
+     margin: auto;
+     margin-top: 20px;
+     width: 60%;
+     border-radius: 45%;
+     
+    }
+}
+.com-3 .proba .stat .num {
+    font-size: 30px;
+}
+.com-3 .proba .stat p {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.com-3 .proba .stat .fa-children,.fa-seedling,.fa-hands-holding-circle {
+    font-size: 35px;
+    padding: 15px 0px; 
+}
+
+/* End section 03 الصفحة الرىيسية */
+
+/* Start section 04 الصفحة الرىيسية */
+.com4 .he {
+    height: 280px;
+}
+.com4 {
+    margin-top: -60px;
+}
+
+@media (max-width: 991px) {
+    .com4  {
+      margin-top: 310px;
+    }
+}
+.com4 .card {
+    height: 710px;
+    
+}
+@media (max-width: 991px) {
+    .com4 .card {
+       height: auto;
+    }
+}
+.com4 .card h5 {
+    padding: 15px;
+    width: 100%;
+    color: white;
+    background-color: #33d1cc;
+    font-size: 18px;
+}
+/* End section 04 الصفحة الرىيسية */
+
+/* Start section 05 الصفحة الرىيسية */
+
+@media (min-width: 991px) {
+    .mapBox  {
+        height: 500px;
+        margin-top: -110px;
+        
+    }
+}
+  
+
+
+/* End section 05 الصفحة الرىيسية */
+
+
+/* Start footer */
+.footer {
+    height: 580px;
+}
+@media (min-width: 991px) {
+    .footer  {
+       margin-top: -200px;
+    }
+}
+
+.footer .fo p {
+    padding-top: 10px;
+}
+.footer .link h5 {
+    padding-top: 15px;
+    font-size: 18px;
+}
+.footer .link a {
+    text-decoration: none;
+    color: #eff7fa;
+}
+.footer .link a:hover {
+    
+    color: #00a653;
+}
+
+.footer .contact ul {
+    margin-left: 120px;
+}
+
+
+.footer .contact .fa-envelope ,.fa-skype {
+    width: 25px;
+    height: 25px;
+    
+} 
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.footer .facebook {
+    background-color: #1877f2;
+    height: 25px;
+}
+.footer .twitter {
+    background-color: #1da1f2;
+
+}
+.footer .instagram {
+    background-color: #0077b5;
+}
+.footer .youtube {
+    background-color: #ff0000;
+}
+.footer .facebook:hover,.footer .twitter:hover,.footer .instagram:hover,.footer .youtube{
+        
+        transition: all 0.3s linear;
+    
+}
+.footer .facebook:hover,.footer .twitter:hover,.footer .instagram:hover,.footer .youtube:hover{
+    transform: scale(1.3);
+}
+
+
+.fo-tel {
+    height: 1300px;
+    background-color: black;
+    margin-top: 280px;
+} 
+.fo-tel .facebook{
+    background-color: #1877f2;
+    height: 25px;
+}
+.fo-tel .twitter{
+    background-color: #1da1f2;
+}
+.fo-tel .instagram{
+    background-color: #0077b5;
+}
+.fo-tel .youtube{
+    background-color: #ff0000;
+}
+.fo-tel .link a {
+    text-decoration: none;
+    color: #eff7fa;
+}
+.fo-tel .link a:hover {
+    
+    color: #00a653;
+}
+
+.fo-tel .facebook:hover,.fo-tel .twitter:hover,.fo-tel .instagram:hover,.fo-tel .youtube{
+        
+    transition: all 0.3s linear;
+
+}
+.fo-tel .facebook:hover,.fo-tel .twitter:hover,.fo-tel .instagram:hover,.fo-tel .youtube:hover{
+transform: scale(1.3);
+}
+/* End footer */
+.to-top {
+    background: rgb(56, 50, 50);
+    position: fixed;
+    bottom: 16px;
+    left: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--green-two);
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* Start page defintion */
+.def .kafil-def  {
+  background-color: var(--green-two);
+  border-radius: 10px;
+  
+} 
+.def  .content {
+    border :1px solid gray;
+    border-radius:5px;
+    
+    margin-bottom: 20px;
+}
+.def  .content img {
+    border-radius: 250px;
+    height: 200px;
+    margin-top: 70px;
+}
+
+
+
+/* End page defintion */
+
+/*  Start Contact*/
+.def .content .fa-envelope,.fa-skype,.fa-phone {
+    height: 25px;
+    color: #00a653;
+}
+.def .content spa {
+    font-size: 18px;
+}
+@media (max-width: 991px) {
+    .def .content .bank  {
+        
+      font-size: 12px;
+    }
+}
+
+/*End Contact*/
+
+
+.def .content .con {
+    background-color: #1776a7;
+    padding: 20px;
+    margin: 10px;
+    margin: auto;
+    height: 300px;
+}
+@media (max-width: 991px) {
+    .def .content .con {
+        margin-bottom: 10px;
+        width: 80%;
+        height: auto;
+    }
+}
+
+.def .content .con h2 {
+    color: white;
+}
+.def .content .con p {
+    color: white;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+
+/* start but */
+.def-1 h4 {
+    font-family: 'Amiri', serif;
+    font-size: 30px;
+    background: #a13e3e;
+}
+.def-1 .but {
+    color: white;
+    font-family: 'Amiri', serif;
+    font-size: 20px;
+    background-color: #1776a7;
+    
+}
+
+
+/* fin but */
+
+
+
+.def .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Style the buttons inside the tab */
+  .def .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .def .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .def .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .def .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-bottom: 40px;
+  }
+  .def .tabcontent p {
+    font-size: 22px;
+
+  }
